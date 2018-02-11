@@ -1,101 +1,120 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-	<meta charset="utf-8">
-	<title>export do excelu</title>
-</head>
-<body>
-<button id="btnExport" onclick="tableToExcel('books', 'neco');"> EXPORT </button>
-	<table id="books" border="9">
-		<thead>
-			<tr>
-				<th>číslo knihy</th>
-				<th>nazev knihy</th>
-				<th>autor</th>
-				<th>popis</th>
-				<th>cena</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>1</td>
-				<td>harry potter</td>
-				<td>jk rowling</td>
-				<td>o čarodějovi</td>
-				<td>150kč</td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>harry potter</td>
-				<td>jk rowling</td>
-				<td>o čarodějovi</td>
-				<td>150kč</td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>harry potter</td>
-				<td>jk rowling</td>
-				<td>o čarodějovi</td>
-				<td>150kč</td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>harry potter</td>
-				<td>jk rowling</td>
-				<td>o čarodějovi</td>
-				<td>150kč</td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>harry potter</td>
-				<td>jk rowling</td>
-				<td>o čarodějovi</td>
-				<td>150kč</td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>harry potter</td>
-				<td>jk rowling</td>
-				<td>o čarodějovi</td>
-				<td>150kč</td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>harry potter</td>
-				<td>jk rowling</td>
-				<td>o čarodějovi</td>
-				<td>150kč</td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>harry potter</td>
-				<td>jk rowling</td>
-				<td>o čarodějovi</td>
-				<td>150kč</td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>harry potter</td>
-				<td>jk rowling</td>
-				<td>o čarodějovi</td>
-				<td>150kč</td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>harry potter</td>
-				<td>jk rowling</td>
-				<td>o čarodějovi</td>
-				<td>150kč</td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>harry potter</td>
-				<td>jk rowling</td>
-				<td>o čarodějovi</td>
-				<td>150kč</td>
-			</tr>
-		</tbody>
-	</table>
-	
+	<!DOCTYPE html>
+	<html lang="cs">
+	<head>
+		<meta charset="utf-8">
+		<title>export do excelu</title>
+		<script src="js/FileSaver.min.js"></script>
+		<script src="js/tableexport.min.js"></script>
+	</head>
+	<body>
+		<button id="btnExport"> EXPORT </button>
+		<table id="books" border="9">
+			<thead>
+				<tr>
+					<th>číslo knihy</th>
+					<th>nazev knihy</th>
+					<th>autor</th>
+					<th>popis</th>
+					<th>cena</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>harry potter</td>
+					<td>jk rowling</td>
+					<td>o čarodějovi</td>
+					<td>150kč</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>harry potter</td>
+					<td>jk rowling</td>
+					<td>o čarodějovi</td>
+					<td>150kč</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>harry potter</td>
+					<td>jk rowling</td>
+					<td>o čarodějovi</td>
+					<td>150kč</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>harry potter</td>
+					<td>jk rowling</td>
+					<td>o čarodějovi</td>
+					<td>150kč</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>harry potter</td>
+					<td>jk rowling</td>
+					<td>o čarodějovi</td>
+					<td>150kč</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>harry potter</td>
+					<td>jk rowling</td>
+					<td>o čarodějovi</td>
+					<td>150kč</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>harry potter</td>
+					<td>jk rowling</td>
+					<td>o čarodějovi</td>
+					<td>150kč</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>harry potter</td>
+					<td>jk rowling</td>
+					<td>o čarodějovi</td>
+					<td>150kč</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>harry potter</td>
+					<td>jk rowling</td>
+					<td>o čarodějovi</td>
+					<td>150kč</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>harry potter</td>
+					<td>jk rowling</td>
+					<td>o čarodějovi</td>
+					<td>150kč</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>harry potter</td>
+					<td>jk rowling</td>
+					<td>o čarodějovi</td>
+					<td>150kč</td>
+				</tr>
+			</tbody>
+		</table>
+<script type="text/javascript"> 
+var table = document.getElementById('books');
+
+var instance = new TableExport(table, {
+    formats: ['xls'],
+    exportButtons: false
+});
+
+//                                        // "id" of selector    // format
+var exportData = instance.getExportData()['books']['xls'];
+
+var XLSbutton = document.getElementById('btnExport');
+
+XLSbutton.addEventListener('click', function (e) {
+    //                   // data          // mime              // name              // extension
+    instance.export2file(exportData.data, exportData.mimeType, exportData.filename, exportData.fileExtension);
+});
+</script>
 </body>
 </html>
