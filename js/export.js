@@ -5,7 +5,7 @@ var instance = new TableExport(table, {
     exportButtons: false
 });
 
-//                                        // "id" of selector    // format
+//                                        // "id" of selector    // format1
 var exportData = instance.getExportData()['books']['xls'];
 
 var XLSbutton = document.getElementById('btnExport');
